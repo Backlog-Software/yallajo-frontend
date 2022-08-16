@@ -1,16 +1,9 @@
 import React from "react";
 // import axios from "axios";
-import {
-  MDBCardTitle,
-  MDBCardImage,
-  MDBBtn,
-  MDBRow,
-  MDBCol,
-  MDBContainer,
-} from "mdb-react-ui-kit";
+import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCardImage, MDBBtn, MDBTypography } from 'mdb-react-ui-kit';
 import { withAuth0 } from '@auth0/auth0-react';
 import Header from "../LandingPage/Header";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 class UserProfile extends React.Component {
   // constructor(props) {
@@ -40,24 +33,33 @@ class UserProfile extends React.Component {
     return (
       <>
         <Header />
-        <MDBContainer className="h-50">
-          <MDBRow>
-            <MDBCol md='8'>
-              <MDBCardImage src='https://www.pngkey.com/png/full/73-730477_first-name-profile-image-placeholder-png.png' className="h-25" alt="..." />
-              <MDBRow>
-                <MDBCol md='6'>
-                  <MDBBtn color='dark'><Link to='service' style={{ textDecoration: "none", color: 'white' }}>Offer Service</Link></MDBBtn>
-                </MDBCol>
-                <MDBCol md='6'>
-                  <MDBBtn color='dark'><Link to='blog' style={{ textDecoration: "none", color: 'white' }}>Write a Blog</Link></MDBBtn>
-                </MDBCol>
-              </MDBRow>
-            </MDBCol>
-            <MDBCol md='4'>
-              <MDBCardTitle>Welcome {user.name} !</MDBCardTitle>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
+        <div className="vh-80" style={{ backgroundColor: 'white' }}>
+      <MDBContainer className="container py-5 h-100 ">
+        <MDBRow className="justify-content-center align-items-center h-100">
+          <MDBCol md="12" xl="4">
+            <MDBCard style={{ borderRadius: '15px' , border:'1px solid orange', backgroundColor :'orange'}}>
+              <MDBCardBody className="text-center">
+                <div className="mt-3 mb-4">
+                  <MDBCardImage  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                    className="rounded-circle" fluid style={{ width: '100px'  , margin:'auto'}} />
+                </div>
+                <MDBTypography tag="h4" color="white">   {user.name} </MDBTypography>
+                <MDBCardText className="mb-4" style={{color:'white'}}>
+                {user.email} <span className="mx-2"></span>
+                </MDBCardText>
+                <MDBBtn style={{  margin:'auto'}} rounded size="lg" className="btn btn-outline-warning  bg-white btn-lg">
+                  Add Blog
+                </MDBBtn>
+                <MDBBtn style={{  margin:'auto' , marginLeft:'5vh'}} rounded size="lg" className="btn btn-outline-warning  bg-white btn-lg">
+                  Add Service
+                </MDBBtn>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+    </div>
+
       </>
     );
   }
