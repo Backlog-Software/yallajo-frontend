@@ -1,0 +1,190 @@
+{
+  "Header": {
+    "title": "YellaJo",
+    "paragraph": "Jordan is a country of hikers and historians, scientists and artists, foodies and yoga-fiends. Whatever your tribe, you'll find a kindred spirit here."
+  },
+  "About": {
+    "paragraph": "Jordan is a land steeped in history. It has been home to some of Humankind's earliest settlements and villages; harboring hidden relics from the world's great civilizations.As the crossroads of the Middle East, the lands of Jordan and Palestine have served as a strategic nexus; connecting Asia, Africa, and Europe.  Since the dawn of civilization, Jordan's geography has given it an important role as a conduit for trade and communications; connecting the orient with the west. Jordan continues to play a critical role in geopolitical affairs. Pro-Tip: Jordan’s Independence Day is on May 25th.",
+    "Why": [
+      "Float in The Dead Sea.",
+      "Visit Petra.",
+      "Experience The Valley Of The Moon.",
+      "Camp Under the Stars."
+    ],
+    "Why2": [
+      "Be Adventurous; Go on a jeep safari.",
+      "Stroll in The Footsteps of Famous Actors.",
+      "Historic Treasures of Jordan."
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-bed",
+      "name": "Rent a Room",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-globe",
+      "name": "All The World",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-map-marker",
+      "name": "Explore The Area",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-suitcase",
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-plane",
+      "name": "Reception",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-car",
+      "name": "Rent a Car",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "https://ca.slack-edge.com/TNGRRLUMA-U03LPQ166EN-f658e4421226-512",
+      "name": "Huthaifa Alzawahreh",
+      "job": "Back-End Developer"
+    },
+    {
+      "img": "https://ca.slack-edge.com/TNGRRLUMA-U03L96E9G6T-34ae4dec1141-512",
+      "name": "Malek Hamdan",
+      "job": "Back-End Developer"
+    },
+    {
+      "img": "https://ca.slack-edge.com/TNGRRLUMA-U03L96DA9D5-8364b2f1ff3d-512",
+      "name": "Ruba Sultan Albrezat",
+      "job": "Front-End Developer"
+    },
+    {
+      "img": "https://ca.slack-edge.com/TNGRRLUMA-U03M2E0V6UR-11949e28a586-512",
+      "name": "Ahmed Al-Awamleh",
+      "job": "Front-End Developer"
+    },
+    {
+      "img": "https://ca.slack-edge.com/TNGRRLUMA-U03MDGVER40-59d28dff618d-512",
+      "name": "Eyad Mansour",
+      "job": "Back-End Developer"
+    }
+  ],
+  "Contact": {
+    "address": "Amman, Jordan",
+    "phone": "+962-7866985201",
+    "email": "BackLog@company.com",
+    "facebook": "https://www.facebook.com",
+    "twitter": "https://www.twitter.com",
+    "youtube": "https://www.youtube.com",
+    "github": "https://github.com/Backlog-Software",
+    "instagram": "https://www.instagram.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Lorem ipsum", 
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ]
+}

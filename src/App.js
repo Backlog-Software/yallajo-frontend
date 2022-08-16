@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import LandingPage from "./components/LandingPage/LandingPage";
+import AppLanding from "./components/land-new/home/src/AppLanding";
 
 // import axios from 'axios';
 // import Blogs from './components/Blogs'
@@ -20,6 +21,7 @@ function App() {
   return (
     <>
       <LandingPage />
+      <AppLanding/>
     </>
   );
 }
