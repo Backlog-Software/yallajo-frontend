@@ -27,7 +27,7 @@ class SearchForm extends React.Component {
           </MDBCol>
 
           <MDBCol size='auto'>
-            <MDBBtn type='submit' color='dark'>Searh</MDBBtn>
+            <MDBBtn type='submit'  className='btn btn-warning btn-lg' >Searh</MDBBtn>
           </MDBCol>
         </MDBRow>
       </>

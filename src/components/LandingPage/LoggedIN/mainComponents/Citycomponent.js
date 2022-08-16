@@ -1,11 +1,12 @@
 import SearchForm from './SearchForm';
+
 import Weather from './Weather';
 import Map from './Map';
 import DisplayedInfo from './DisplayedInfo';
 import Unsplashimg from './Unsplashimg';
 import { Component } from 'react';
-import 'cityStyle.'
 import axios from 'axios';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 // import Header from '../../loggedOut/Header';
 // import LogoutButton from '../../../user/LogoutButton';
 import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit';
@@ -73,19 +74,25 @@ class Citycomponent extends Component {
 
 				</Routes>*/}
 				<div
-					className='p-5 text-center bg-image d-flex align-items-center'
-					style={{ height: 'auto', minHeight: '25rem' }}
+					className=' text-center d-flex'
+					style={{ height: '10vh', minHeight: '25rem'  , backgroundColor:'white' }}
 				>
 					<MDBContainer >
+						
 						<MDBRow>
-							<MDBCol >
+							<MDBCol style={{ marginTop:'2vh'}}>
 								<SearchForm display={this.displayLocation} />
 							</MDBCol>
+
+							{/* <MDBCol md='3'>
+								<LogoutButton />
+							</MDBCol> */}
 						</MDBRow>
 
 						{this.state.showData &&
-							<>
-								<MDBRow>
+							<> 
+							<div className="seeCityInfo" >
+								<MDBRow >
 									<DisplayedInfo name={this.state.cityName} />
 								</MDBRow>
 								<MDBRow>
@@ -102,6 +109,7 @@ class Citycomponent extends Component {
 								<MDBRow>
 									<UseServices />
 								</MDBRow>
+								</div>
 							</>}
 					</MDBContainer>
 					{this.state.showErr && <p>Enter valid Value Please</p>}
