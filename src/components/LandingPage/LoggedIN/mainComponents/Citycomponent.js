@@ -4,6 +4,7 @@ import Map from './Map';
 import DisplayedInfo from './DisplayedInfo';
 import Unsplashimg from './Unsplashimg';
 import { Component } from 'react';
+import 'cityStyle.'
 import axios from 'axios';
 // import Header from '../../loggedOut/Header';
 // import LogoutButton from '../../../user/LogoutButton';
