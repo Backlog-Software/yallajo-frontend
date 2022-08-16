@@ -13,7 +13,7 @@ class BlogPost extends Component {
     handleSubmit = async (e) => {
         e.preventDefault()
         const data = {
-            'newArticle': {
+            'newBlog': {
                 'title': e.target.title.value,
                 'keyword': e.target.keyword.value,
                 'image': e.target.image.value,
@@ -21,7 +21,7 @@ class BlogPost extends Component {
             }
         };
 
-        await axios.post(`${process.env.REACT_APP_PORT}/blog`, data).catch(function (error) { console.log(error) })
+        await axios.post(`${process.env.REACT_APP_PORT_URL}/blog`, data).catch(function (error) { console.log(error) })
 
 
     }
@@ -31,14 +31,66 @@ class BlogPost extends Component {
             <>
                 <Header />
                 <form onSubmit={this.handleSubmit}>
-                    <MDBInput id='title' wrapperClass='mb-4' label='Title' />
-                    <MDBInput id='keyword' wrapperClass='mb-4' label='City Name' />
-                    <MDBInput id='image' wrapperClass='mb-4' label='Image URL' />
+                    {/* <MDBInput id='title' wrapperClass='mb-4' label='Title' /> */}
+                    {/* <MDBInput id='keyword' wrapperClass='mb-4' label='City Name' />
+                    <MDBInput id='image' wrapperClass='mb-4' label='Image URL' /> */}
                     {/* <MDBInput wrapperClass='mb-4' textarea id='content' rows={4} label='Content' /> */}
+                    <div className="website-url-input">
+                        <label htmlFor="website-url">
+                            Website URL
+                        </label>
+                        <div className="input-container">
+                            <div className="website-protocol">
+                                https://
+                            </div>
+                            <input
+                                type="text"
+                                placeholder="www.example.com"
+                                name="keyword"
+                                className="input"
+                            />
+                        </div>
+                    </div>
 
-                    <MDBBtn type='submit' className='mb-4' block>
-                        submit
-                    </MDBBtn>
+                    <div className="website-url-input">
+                        <label htmlFor="website-url">
+                            title
+                        </label>
+                        <div className="input-container">
+                            <div className="website-protocol">
+                                Title..
+                            </div>
+                            <input
+                                name='title'
+                                type="text"
+                                placeholder="input title"
+
+                                className="input"
+                            />
+                        </div>
+                    </div>
+                    <div className="website-url-input">
+                        <label htmlFor="website-url">
+                            imageURL
+                        </label>
+                        <div className="input-container">
+                            <div className="website-protocol">
+                                imageURL
+                            </div>
+                            <input
+                                type="text"
+                                placeholder="input title"
+                                name='image'
+                                className="input"
+                            />
+                        </div>
+                    </div>
+
+                    <input type='submit'
+                        className="btn-primary-sm"
+                    />
+
+
                 </form>
             </>
         );

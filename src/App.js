@@ -13,13 +13,15 @@ import LandingPage from "./components/LandingPage/LandingPage";
 // import Profile from './components/user/Profile';
 // import Test from './components/test';
 // import LoginButton from './components/user/LoginButton';
-
+import BlogPost from './components/BlogPost';
 
 function App() {
 
   return (
     <>
-      <LandingPage />
+      {/* <LandingPage /> */}
+      {/* <Blogs /> */}
+      <BlogPost />
     </>
   );
 }
