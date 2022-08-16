@@ -57,8 +57,8 @@ class Citycomponent extends Component {
 			image: this.props.auth0.user.picture
 		}
 
-		const found = await axios.post(`${process.env.REACT_APP_PORT}/user`, newUser).catch(function (error) { console.log(error) })
-		console.log(found)
+		await axios.post(`${process.env.REACT_APP_PORT}/user`, newUser).catch(function (error) { console.log(error) })
+
 	}
 	componentDidMount() {
 		this.createUser()

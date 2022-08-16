@@ -1,46 +1,48 @@
 import React from "react";
-// import axios from "axios";
-import {
-  MDBCardTitle,
-  MDBCardImage,
-  MDBBtn,
-  MDBRow,
-  MDBCol,
-  MDBContainer,
-} from "mdb-react-ui-kit";
+import axios from "axios";
+// import {
+//   MDBCardTitle,
+//   MDBCardImage,
+//   MDBBtn,
+//   MDBRow,
+//   MDBCol,
+//   MDBContainer,
+// } from "mdb-react-ui-kit";
 import { withAuth0 } from '@auth0/auth0-react';
 import Header from "../LandingPage/Header";
 import { Link } from "react-router-dom";
 
 class UserProfile extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     profileData: {},
-  //     user: this.props.auth0.user
-  //   };
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      profileData: {},
 
-  // getData = async () => {
-  //   const responseData = await axios
-  //     .get(`$(process.env.REACT_APP_PORT}/user?email=${this.state.user.email}`) //params to be extracted and added here
-  //     .catch(function (err) {
-  //       console.log(err);
-  //     });
-  //   this.setState({
-  //     profileData: responseData.data,
-  //   });
-  // };
-  // componentDidMount() {
-  //   this.getData();
-  // }
-  render() {
+    };
+  }
+
+  getData = async () => {
     const { user } = this.props.auth0;
-    // console.log(this.state.user)
+
+    const responseData = await axios
+      .get(`${process.env.REACT_APP_PORT}/user?email=${user.email}`) //params to be extracted and added here
+      .catch(function (err) {
+        console.log(err);
+      });
+    this.setState({
+      profileData: responseData.data,
+    });
+  };
+  componentDidMount() {
+    this.getData();
+  }
+  render() {
+
     return (
       <>
         <Header />
-        <MDBContainer className="h-50">
+        <h1>Welcome</h1>
+        {/* <MDBContainer className="h-50">
           <MDBRow>
             <MDBCol md='8'>
               <MDBCardImage src='https://www.pngkey.com/png/full/73-730477_first-name-profile-image-placeholder-png.png' className="h-25" alt="..." />
@@ -57,7 +59,7 @@ class UserProfile extends React.Component {
               <MDBCardTitle>Welcome {user.name} !</MDBCardTitle>
             </MDBCol>
           </MDBRow>
-        </MDBContainer>
+        </MDBContainer> */}
       </>
     );
   }
