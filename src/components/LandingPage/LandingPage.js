@@ -18,6 +18,8 @@ import About from './About'
 import UserProfile from '../User/UserProfile';
 import BlogPost from '../BlogPost';
 import CreateServices from '../CreateServices';
+import EditBlog from '../User/editBlog';
+import EditService from '../User/editService';
 // import Profile from '../user/Profile';
 class LandingPage extends Component {
     render() {
@@ -32,6 +34,12 @@ class LandingPage extends Component {
 
                     <Route path='about' element={<About />} />
                     <Route path='blog' element={<Blogs />} />
+                    <Route path='blog/:id' element={<EditBlog />} />
+                    <Route path='carRental/:id' element={<EditService />} />
+                    <Route path='tourGuide/:id' element={<EditService />} />
+                    <Route path='roomRental/:id' element={<EditService />} />
+
+
                     {
                         !isAuthenticated &&
                         <Route path='/' element={<MainLoggedOut />} />
