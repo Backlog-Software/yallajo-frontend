@@ -35,7 +35,7 @@ class Blogs extends Component {
                             Blogs that are loved by the community. Updated every hour.
                         </p>
                     </div>
-                    <div className="card-container">
+                    <div className="card-container" style={{width:'80%' , margin:'5vh auto'}}>
                         {
                             this.state.blogData.map((items, key) => (
                                 <article className="card" key={key}>
